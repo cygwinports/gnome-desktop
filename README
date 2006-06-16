@@ -1,0 +1,334 @@
+gnome-desktop
+-------------------------------------------
+Contained here are documents installed as part
+of the core GNOME distribution, e.g. the GPL, GNOME's
+.desktop files, the gnome-about program, some manpages and
+GNOME's core graphics files and icons.
+
+Runtime requirements:
+  cygwin-1.5.20-1
+  GConf2-2.14.0-2
+  atk-1.10.3-1
+  gtk2-x11-2.8.17-1
+  libgnome2-2.14.1-1
+  libgnomecanvas2-2.14.0-1
+  libgnomeui2-2.14.1-1
+  startup-notification-0.8-1
+
+Build requirements:
+(besides corresponding devel packages)
+  cygwin-1.5.20-1
+  autoconf2.5-2.59-2
+  automake1.9-1.9.6-1
+  binutils-20050610-1
+  cygport-0.2.1-1
+  gawk-3.1.5-2
+  gcc-core-3.4.4-1
+  intltool-0.35.0-1
+  libtool1.5-1.5.22-1
+  make-3.80-1
+  pkg-config-0.20-1
+  scrollkeeper-0.3.14-2
+  sed-4.1.5-1
+
+Canonical homepage:
+  http://www.gnome.org/
+
+Canonical download:
+  ftp://ftp.gnome.org/pub/GNOME/sources/gnome-desktop/
+
+-------------------------------------------
+
+Build instructions:
+  unpack gnome-desktop-2.14.1-1-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./gnome-desktop-2.14.1-1.cygport all
+
+This will create:
+  /usr/src/gnome-desktop-2.14.1-1-src.tar.bz2
+  /usr/src/gnome-desktop-2.14.1-1.tar.bz2
+  /usr/src/libgnome-desktop2-2.14.1-1.tar.bz2
+  /usr/src/libgnome-desktop2-doc-2.14.1-1.tar.bz2
+
+-------------------------------------------
+
+Files included in the main package:
+
+  /etc/postinstall/gnome-desktop.sh
+  /usr/bin/gnome-about.exe
+  /usr/share/applications/gnome-about.desktop
+  /usr/share/doc/Cygwin/gnome-desktop-2.14.1.README
+  /usr/share/doc/gnome-desktop-2.14.1/AUTHORS
+  /usr/share/doc/gnome-desktop-2.14.1/COPYING
+  /usr/share/doc/gnome-desktop-2.14.1/COPYING-DOCS
+  /usr/share/doc/gnome-desktop-2.14.1/COPYING.LIB
+  /usr/share/doc/gnome-desktop-2.14.1/ChangeLog
+  /usr/share/doc/gnome-desktop-2.14.1/HACKING
+  /usr/share/doc/gnome-desktop-2.14.1/INSTALL
+  /usr/share/doc/gnome-desktop-2.14.1/NEWS
+  /usr/share/doc/gnome-desktop-2.14.1/README
+  /usr/share/gnome-about/gnome-64.png
+  /usr/share/gnome-about/gnome-version.xml
+  /usr/share/gnome-about/headers/header-bg-ancient01a.png
+  /usr/share/gnome-about/headers/header-bg-city01.png
+  /usr/share/gnome-about/headers/header-bg-clouds01.png
+  /usr/share/gnome-about/headers/header-bg-clouds02.png
+  /usr/share/gnome-about/headers/header-bg-hills01.png
+  /usr/share/gnome-about/headers/header-bg-landscape01.png
+  /usr/share/gnome-about/headers/header-bg-mountains01.png
+  /usr/share/gnome-about/headers/header-bg-snow01.png
+  /usr/share/gnome-about/headers/header-bg-sunset01.png
+  /usr/share/gnome/help/fdl/C/fdl.xml
+  /usr/share/gnome/help/fdl/es/fdl.xml
+  /usr/share/gnome/help/fdl/fr/fdl.xml
+  /usr/share/gnome/help/fdl/uk/fdl.xml
+  /usr/share/gnome/help/gnome-feedback/C/gnome-feedback.xml
+  /usr/share/gnome/help/gnome-feedback/es/gnome-feedback.xml
+  /usr/share/gnome/help/gnome-feedback/fr/gnome-feedback.xml
+  /usr/share/gnome/help/gnome-feedback/it/gnome-feedback.xml
+  /usr/share/gnome/help/gnome-feedback/uk/gnome-feedback.xml
+  /usr/share/gnome/help/gpl/C/gpl.xml
+  /usr/share/gnome/help/gpl/es/gpl.xml
+  /usr/share/gnome/help/gpl/fi/gpl.xml
+  /usr/share/gnome/help/gpl/fr/gpl.xml
+  /usr/share/gnome/help/gpl/pa/gpl.xml
+  /usr/share/gnome/help/gpl/uk/gpl.xml
+  /usr/share/gnome/help/lgpl/C/lgpl.xml
+  /usr/share/gnome/help/lgpl/es/lgpl.xml
+  /usr/share/gnome/help/lgpl/fr/lgpl.xml
+  /usr/share/gnome/help/lgpl/pa/lgpl.xml
+  /usr/share/gnome/help/lgpl/uk/lgpl.xml
+  /usr/share/locale/af/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/am/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ar/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/az/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/be/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/bg/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/bn/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/br/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/bs/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ca/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/cs/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/cy/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/da/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/de/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/dz/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/el/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/en_CA/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/en_GB/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/eo/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/es/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/et/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/eu/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/fa/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/fi/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/fr/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ga/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/gl/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/gu/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/he/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/hi/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/hr/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/hu/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/hy/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/id/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/is/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/it/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ja/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ka/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/kn/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ko/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ku/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ky/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/li/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/lt/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/lv/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/mi/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/mk/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ml/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/mn/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/mr/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ms/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/nb/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ne/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/nl/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/nn/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/no/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/nso/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/or/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/pa/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/pl/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/pt/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/pt_BR/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ro/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ru/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/rw/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/sk/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/sl/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/sq/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/sr/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/sr@Latn/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/sv/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ta/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/te/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/th/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/tk/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/tr/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/ug/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/uk/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/vi/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/wa/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/xh/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/yi/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/yo/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/zh_CN/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/zh_TW/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/zu/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/man/man1/gnome-about.1.gz
+  /usr/share/omf/fdl/fdl-C.omf
+  /usr/share/omf/fdl/fdl-es.omf
+  /usr/share/omf/fdl/fdl-fr.omf
+  /usr/share/omf/fdl/fdl-uk.omf
+  /usr/share/omf/gnome-feedback/gnome-feedback-C.omf
+  /usr/share/omf/gnome-feedback/gnome-feedback-es.omf
+  /usr/share/omf/gnome-feedback/gnome-feedback-fr.omf
+  /usr/share/omf/gnome-feedback/gnome-feedback-it.omf
+  /usr/share/omf/gnome-feedback/gnome-feedback-uk.omf
+  /usr/share/omf/gpl/gpl-C.omf
+  /usr/share/omf/gpl/gpl-es.omf
+  /usr/share/omf/gpl/gpl-fi.omf
+  /usr/share/omf/gpl/gpl-fr.omf
+  /usr/share/omf/gpl/gpl-pa.omf
+  /usr/share/omf/gpl/gpl-uk.omf
+  /usr/share/omf/lgpl/lgpl-C.omf
+  /usr/share/omf/lgpl/lgpl-es.omf
+  /usr/share/omf/lgpl/lgpl-fr.omf
+  /usr/share/omf/lgpl/lgpl-pa.omf
+  /usr/share/omf/lgpl/lgpl-uk.omf
+  /usr/share/pixmaps/apple-green.png
+  /usr/share/pixmaps/apple-red.png
+  /usr/share/pixmaps/gnome-aorta.png
+  /usr/share/pixmaps/gnome-applets.png
+  /usr/share/pixmaps/gnome-background-image.png
+  /usr/share/pixmaps/gnome-background-pattern.png
+  /usr/share/pixmaps/gnome-background.png
+  /usr/share/pixmaps/gnome-calc2.png
+  /usr/share/pixmaps/gnome-calc3.png
+  /usr/share/pixmaps/gnome-calendar.png
+  /usr/share/pixmaps/gnome-ccbackground.png
+  /usr/share/pixmaps/gnome-ccdesktop.png
+  /usr/share/pixmaps/gnome-ccdialog.png
+  /usr/share/pixmaps/gnome-ccmime.png
+  /usr/share/pixmaps/gnome-ccperiph.png
+  /usr/share/pixmaps/gnome-ccscreensaver.png
+  /usr/share/pixmaps/gnome-ccwindowmanager.png
+  /usr/share/pixmaps/gnome-color-browser.png
+  /usr/share/pixmaps/gnome-color-xterm.png
+  /usr/share/pixmaps/gnome-computer.png
+  /usr/share/pixmaps/gnome-cromagnon.png
+  /usr/share/pixmaps/gnome-day.png
+  /usr/share/pixmaps/gnome-debian.png
+  /usr/share/pixmaps/gnome-diskfree.png
+  /usr/share/pixmaps/gnome-emacs.png
+  /usr/share/pixmaps/gnome-eterm.png
+  /usr/share/pixmaps/gnome-file-c.png
+  /usr/share/pixmaps/gnome-file-h.png
+  /usr/share/pixmaps/gnome-folder.png
+  /usr/share/pixmaps/gnome-gemvt.png
+  /usr/share/pixmaps/gnome-gimp.png
+  /usr/share/pixmaps/gnome-gmenu.png
+  /usr/share/pixmaps/gnome-gmush.png
+  /usr/share/pixmaps/gnome-gnomoku.png
+  /usr/share/pixmaps/gnome-home.png
+  /usr/share/pixmaps/gnome-html.png
+  /usr/share/pixmaps/gnome-image-gif.png
+  /usr/share/pixmaps/gnome-image-jpeg.png
+  /usr/share/pixmaps/gnome-irc.png
+  /usr/share/pixmaps/gnome-laptop.png
+  /usr/share/pixmaps/gnome-log.png
+  /usr/share/pixmaps/gnome-logo-icon-transparent.png
+  /usr/share/pixmaps/gnome-logo-icon.png
+  /usr/share/pixmaps/gnome-logo-large.png
+  /usr/share/pixmaps/gnome-mdi.png
+  /usr/share/pixmaps/gnome-mnemonic.png
+  /usr/share/pixmaps/gnome-month.png
+  /usr/share/pixmaps/gnome-mouse.png
+  /usr/share/pixmaps/gnome-news.png
+  /usr/share/pixmaps/gnome-note.png
+  /usr/share/pixmaps/gnome-qeye.png
+  /usr/share/pixmaps/gnome-set-time.png
+  /usr/share/pixmaps/gnome-spider.png
+  /usr/share/pixmaps/gnome-squeak.png
+  /usr/share/pixmaps/gnome-suse.png
+  /usr/share/pixmaps/gnome-talk.png
+  /usr/share/pixmaps/gnome-term-linux.png
+  /usr/share/pixmaps/gnome-term-linux2.png
+  /usr/share/pixmaps/gnome-term-night.png
+  /usr/share/pixmaps/gnome-term-tiger.png
+  /usr/share/pixmaps/gnome-term.png
+  /usr/share/pixmaps/gnome-tigert.png
+  /usr/share/pixmaps/gnome-touristinfo.png
+  /usr/share/pixmaps/gnome-user-interface.png
+  /usr/share/pixmaps/gnome-week.png
+  /usr/share/pixmaps/gnome-windows.png
+  /usr/share/pixmaps/gnome-word.png
+  /usr/share/pixmaps/gnome-workspace.png
+  /usr/share/pixmaps/gnome-xterm.png
+  /usr/share/pixmaps/gtkvim.png
+  /usr/share/pixmaps/kterm.xpm
+  /usr/share/pixmaps/monitor.png
+  /usr/share/pixmaps/vnterm.xpm
+
+
+Files included in the libgnome-desktop2 package:
+
+  /usr/bin/cyggnome-desktop-2-2.dll
+  /usr/include/gnome-desktop-2.0/libgnome/gnome-desktop-item.h
+  /usr/include/gnome-desktop-2.0/libgnomeui/gnome-ditem-edit.h
+  /usr/include/gnome-desktop-2.0/libgnomeui/gnome-hint.h
+  /usr/lib/libgnome-desktop-2.dll.a
+  /usr/lib/libgnome-desktop-2.la
+  /usr/lib/pkgconfig/gnome-desktop-2.0.pc
+
+Files included in the libgnome-desktop2-doc package:
+
+  /usr/share/gtk-doc/html/gnome-desktop/GnomeDItemEdit.html
+  /usr/share/gtk-doc/html/gnome-desktop/GnomeHint.html
+  /usr/share/gtk-doc/html/gnome-desktop/ch01.html
+  /usr/share/gtk-doc/html/gnome-desktop/gnome-desktop-GnomeDesktopItem.html
+  /usr/share/gtk-doc/html/gnome-desktop/gnome-desktop.devhelp
+  /usr/share/gtk-doc/html/gnome-desktop/gnome-desktop.devhelp2
+  /usr/share/gtk-doc/html/gnome-desktop/home.png
+  /usr/share/gtk-doc/html/gnome-desktop/index.html
+  /usr/share/gtk-doc/html/gnome-desktop/index.sgml
+  /usr/share/gtk-doc/html/gnome-desktop/intro.html
+  /usr/share/gtk-doc/html/gnome-desktop/left.png
+  /usr/share/gtk-doc/html/gnome-desktop/right.png
+  /usr/share/gtk-doc/html/gnome-desktop/style.css
+  /usr/share/gtk-doc/html/gnome-desktop/up.png
+
+------------------
+
+Port Notes:
+
+----- version 2.14.2-1 -----
+Version bump.
+
+----- version 2.14.1-1 -----
+Version bump for GNOME 2.14.
+
+----- version 2.12.3-1 -----
+Version bump for GNOME 2.12.
+Source package is now cygport driven.
+
+----- version 2.10.2-1 -----
+Update for GNOME 2.10.
+
+----- version 2.8.3-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://cygwinports.dotsrc.org/
