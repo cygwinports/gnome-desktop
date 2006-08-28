@@ -6,10 +6,10 @@ of the core GNOME distribution, e.g. the GPL, GNOME's
 GNOME's core graphics files and icons.
 
 Runtime requirements:
-  cygwin-1.5.20-1
+  cygwin-1.5.21-1
   GConf2-2.14.0-2
   atk-1.10.3-1
-  gtk2-x11-2.8.17-1
+  gtk2-x11-2.8.20-1
   libgnome2-2.14.1-1
   libgnomecanvas2-2.14.0-1
   libgnomeui2-2.14.1-1
@@ -17,16 +17,16 @@ Runtime requirements:
 
 Build requirements:
 (besides corresponding devel packages)
-  cygwin-1.5.20-1
+  cygwin-1.5.21-1
   autoconf2.5-2.59-2
   automake1.9-1.9.6-1
-  binutils-20050610-1
-  cygport-0.2.1-1
+  binutils-20060709-1
+  cygport-0.2.5-1
   gawk-3.1.5-2
   gcc-core-3.4.4-1
   intltool-0.35.0-1
   libtool1.5-1.5.22-1
-  make-3.80-1
+  make-3.81-1
   pkg-config-0.20-1
   scrollkeeper-0.3.14-2
   sed-4.1.5-1
@@ -50,6 +50,7 @@ This will create:
   /usr/src/gnome-desktop-2.14.1-1-src.tar.bz2
   /usr/src/gnome-desktop-2.14.1-1.tar.bz2
   /usr/src/libgnome-desktop2-2.14.1-1.tar.bz2
+  /usr/src/libgnome-desktop2-devel-2.14.1-1.tar.bz2
   /usr/src/libgnome-desktop2-doc-2.14.1-1.tar.bz2
 
 -------------------------------------------
@@ -184,6 +185,7 @@ Files included in the main package:
   /usr/share/locale/yi/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/yo/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/zh_CN/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/zh_HK/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/zh_TW/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/zu/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/man/man1/gnome-about.1.gz
@@ -281,10 +283,10 @@ Files included in the main package:
   /usr/share/pixmaps/monitor.png
   /usr/share/pixmaps/vnterm.xpm
 
-
-Files included in the libgnome-desktop2 package:
-
+(libgnome-desktop2)
   /usr/bin/cyggnome-desktop-2-2.dll
+
+(libgnome-desktop2-devel)
   /usr/include/gnome-desktop-2.0/libgnome/gnome-desktop-item.h
   /usr/include/gnome-desktop-2.0/libgnomeui/gnome-ditem-edit.h
   /usr/include/gnome-desktop-2.0/libgnomeui/gnome-hint.h
@@ -292,8 +294,7 @@ Files included in the libgnome-desktop2 package:
   /usr/lib/libgnome-desktop-2.la
   /usr/lib/pkgconfig/gnome-desktop-2.0.pc
 
-Files included in the libgnome-desktop2-doc package:
-
+(libgnome-desktop2-doc)
   /usr/share/gtk-doc/html/gnome-desktop/GnomeDItemEdit.html
   /usr/share/gtk-doc/html/gnome-desktop/GnomeHint.html
   /usr/share/gtk-doc/html/gnome-desktop/ch01.html
@@ -312,6 +313,10 @@ Files included in the libgnome-desktop2-doc package:
 ------------------
 
 Port Notes:
+
+----- version 2.14.3-1 -----
+Version bump.
+Created libgnome-desktop2-devel package.
 
 ----- version 2.14.2-1 -----
 Version bump.
