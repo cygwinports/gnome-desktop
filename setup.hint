@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin gtk2-x11 libgnome2 libgnomecanvas2 libgnomeui2
+requires: cygwin glib2 gtk2-x11 libgnome2 libgnomecanvas2 libgnomeui2 libintl8 libxml2
 sdesc: "Core GNOME Desktop files"
 ldesc: "The package contains the libgnome-desktop library which
 contains APIs that really belong in libgnome[ui] but

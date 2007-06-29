@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin atk GConf2 gtk2-x11 libgnome2 libgnomecanvas2 libgnomeui2 startup-notification
+requires: cygwin atk GConf2 glib2 gnome-vfs2 gtk2-x11 libgnome2 libgnomecanvas2 libgnomeui2 libintl8 libxml2 startup-notification
 external-source: gnome-desktop
 sdesc: "GNOME Desktop API library (runtime)"
 ldesc: "The package contains the libgnome-desktop library which

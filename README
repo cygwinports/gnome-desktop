@@ -7,13 +7,18 @@ GNOME's core graphics files and icons.
 
 Runtime requirements:
   cygwin-1.5.24-2
-  GConf2-2.16.0-1
-  atk-1.12.4-1
-  gtk2-x11-2.10.9-1
-  libgnome2-2.16.0-1
+  GConf2-2.18.0.1-1
+  atk-1.18.0-1
+  gdk-pixbuf2-2.10.13-1
+  glib2-2.12.12-2
+  gnome-vfs2-2.18.1-1
+  gtk2-x11-2.10.13-1
+  libgnome2-2.18.0-1
   libgnomecanvas2-2.14.0-1
-  libgnomeui2-2.16.1-1
-  startup-notification-0.8-1
+  libgnomeui2-2.18.1-1
+  libintl8-0.15-1
+  libxml2-2.6.28-2
+  startup-notification-0.9-1
 
 Build requirements:
 (besides corresponding devel packages)
@@ -21,10 +26,10 @@ Build requirements:
   autoconf2.5-2.61-1
   automake1.9-1.9.6-2
   binutils-20060817-1
-  cygport-0.2.9-1
+  cygport-0.3.1-1
   gawk-3.1.5-4
   gcc-core-3.4.4-3
-  intltool-0.35.4-1
+  intltool-0.35.5-1
   libtool1.5-1.5.23a-2
   make-3.81-1
   pkg-config-0.21-1
@@ -40,18 +45,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-desktop-2.16.3-1-src.tar.bz2
+  unpack gnome-desktop-2.18.2-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-desktop-2.16.3-1.cygport all
+  cygport ./gnome-desktop-2.18.2-1.cygport all
 
 This will create:
-  /usr/src/gnome-desktop-2.16.3-1-src.tar.bz2
-  /usr/src/gnome-desktop-2.16.3-1.tar.bz2
-  /usr/src/libgnome-desktop2-2.16.3-1.tar.bz2
-  /usr/src/libgnome-desktop2-devel-2.16.3-1.tar.bz2
-  /usr/src/libgnome-desktop2-doc-2.16.3-1.tar.bz2
+  /usr/src/gnome-desktop-2.18.2-1-src.tar.bz2
+  /usr/src/gnome-desktop-2.18.2-1.tar.bz2
+  /usr/src/libgnome-desktop2-2.18.2-1.tar.bz2
+  /usr/src/libgnome-desktop2-devel-2.18.2-1.tar.bz2
 
 -------------------------------------------
 
@@ -59,18 +63,19 @@ Files included in the binary packages:
 
 (gnome-desktop)
   /etc/postinstall/gnome-desktop.sh
+  /etc/preremove/gnome-desktop.sh
   /usr/bin/gnome-about.exe
   /usr/share/applications/gnome-about.desktop
-  /usr/share/doc/Cygwin/gnome-desktop-2.16.3.README
-  /usr/share/doc/gnome-desktop-2.16.3/AUTHORS
-  /usr/share/doc/gnome-desktop-2.16.3/COPYING
-  /usr/share/doc/gnome-desktop-2.16.3/COPYING-DOCS
-  /usr/share/doc/gnome-desktop-2.16.3/COPYING.LIB
-  /usr/share/doc/gnome-desktop-2.16.3/ChangeLog
-  /usr/share/doc/gnome-desktop-2.16.3/HACKING
-  /usr/share/doc/gnome-desktop-2.16.3/INSTALL
-  /usr/share/doc/gnome-desktop-2.16.3/NEWS
-  /usr/share/doc/gnome-desktop-2.16.3/README
+  /usr/share/doc/Cygwin/gnome-desktop-2.18.2.README
+  /usr/share/doc/gnome-desktop-2.18.2/AUTHORS
+  /usr/share/doc/gnome-desktop-2.18.2/COPYING
+  /usr/share/doc/gnome-desktop-2.18.2/COPYING-DOCS
+  /usr/share/doc/gnome-desktop-2.18.2/COPYING.LIB
+  /usr/share/doc/gnome-desktop-2.18.2/ChangeLog
+  /usr/share/doc/gnome-desktop-2.18.2/HACKING
+  /usr/share/doc/gnome-desktop-2.18.2/MAINTAINERS
+  /usr/share/doc/gnome-desktop-2.18.2/NEWS
+  /usr/share/doc/gnome-desktop-2.18.2/README
   /usr/share/gnome-about/gnome-64.png
   /usr/share/gnome-about/gnome-version.xml
   /usr/share/gnome-about/headers/header-bg-ancient01a.png
@@ -83,29 +88,29 @@ Files included in the binary packages:
   /usr/share/gnome-about/headers/header-bg-snow01.png
   /usr/share/gnome-about/headers/header-bg-sunset01.png
   /usr/share/gnome/help/fdl/C/fdl.xml
+  /usr/share/gnome/help/fdl/ar/fdl.xml
   /usr/share/gnome/help/fdl/es/fdl.xml
   /usr/share/gnome/help/fdl/fr/fdl.xml
+  /usr/share/gnome/help/fdl/ko/fdl.xml
   /usr/share/gnome/help/fdl/sv/fdl.xml
   /usr/share/gnome/help/fdl/uk/fdl.xml
-  /usr/share/gnome/help/gnome-feedback/C/gnome-feedback.xml
-  /usr/share/gnome/help/gnome-feedback/es/gnome-feedback.xml
-  /usr/share/gnome/help/gnome-feedback/fr/gnome-feedback.xml
-  /usr/share/gnome/help/gnome-feedback/it/gnome-feedback.xml
-  /usr/share/gnome/help/gnome-feedback/ru/gnome-feedback.xml
-  /usr/share/gnome/help/gnome-feedback/sv/gnome-feedback.xml
-  /usr/share/gnome/help/gnome-feedback/uk/gnome-feedback.xml
-  /usr/share/gnome/help/gnome-feedback/zh_CN/gnome-feedback.xml
   /usr/share/gnome/help/gpl/C/gpl.xml
+  /usr/share/gnome/help/gpl/ar/gpl.xml
+  /usr/share/gnome/help/gpl/ca/gpl.xml
   /usr/share/gnome/help/gpl/es/gpl.xml
   /usr/share/gnome/help/gpl/fi/gpl.xml
   /usr/share/gnome/help/gpl/fr/gpl.xml
+  /usr/share/gnome/help/gpl/ko/gpl.xml
   /usr/share/gnome/help/gpl/pa/gpl.xml
   /usr/share/gnome/help/gpl/sv/gpl.xml
   /usr/share/gnome/help/gpl/uk/gpl.xml
+  /usr/share/gnome/help/gpl/vi/gpl.xml
   /usr/share/gnome/help/gpl/zh_CN/gpl.xml
   /usr/share/gnome/help/lgpl/C/lgpl.xml
+  /usr/share/gnome/help/lgpl/ar/lgpl.xml
   /usr/share/gnome/help/lgpl/es/lgpl.xml
   /usr/share/gnome/help/lgpl/fr/lgpl.xml
+  /usr/share/gnome/help/lgpl/ko/lgpl.xml
   /usr/share/gnome/help/lgpl/pa/lgpl.xml
   /usr/share/gnome/help/lgpl/sv/lgpl.xml
   /usr/share/gnome/help/lgpl/uk/lgpl.xml
@@ -115,6 +120,7 @@ Files included in the binary packages:
   /usr/share/locale/ar/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/az/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/be/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/be@latin/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/bg/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/bn/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/bn_IN/LC_MESSAGES/gnome-desktop-2.0.mo
@@ -168,6 +174,7 @@ Files included in the binary packages:
   /usr/share/locale/nl/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/nn/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/nso/LC_MESSAGES/gnome-desktop-2.0.mo
+  /usr/share/locale/oc/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/or/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/pa/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/locale/pl/LC_MESSAGES/gnome-desktop-2.0.mo
@@ -201,29 +208,29 @@ Files included in the binary packages:
   /usr/share/locale/zu/LC_MESSAGES/gnome-desktop-2.0.mo
   /usr/share/man/man1/gnome-about.1.gz
   /usr/share/omf/fdl/fdl-C.omf
+  /usr/share/omf/fdl/fdl-ar.omf
   /usr/share/omf/fdl/fdl-es.omf
   /usr/share/omf/fdl/fdl-fr.omf
+  /usr/share/omf/fdl/fdl-ko.omf
   /usr/share/omf/fdl/fdl-sv.omf
   /usr/share/omf/fdl/fdl-uk.omf
-  /usr/share/omf/gnome-feedback/gnome-feedback-C.omf
-  /usr/share/omf/gnome-feedback/gnome-feedback-es.omf
-  /usr/share/omf/gnome-feedback/gnome-feedback-fr.omf
-  /usr/share/omf/gnome-feedback/gnome-feedback-it.omf
-  /usr/share/omf/gnome-feedback/gnome-feedback-ru.omf
-  /usr/share/omf/gnome-feedback/gnome-feedback-sv.omf
-  /usr/share/omf/gnome-feedback/gnome-feedback-uk.omf
-  /usr/share/omf/gnome-feedback/gnome-feedback-zh_CN.omf
   /usr/share/omf/gpl/gpl-C.omf
+  /usr/share/omf/gpl/gpl-ar.omf
+  /usr/share/omf/gpl/gpl-ca.omf
   /usr/share/omf/gpl/gpl-es.omf
   /usr/share/omf/gpl/gpl-fi.omf
   /usr/share/omf/gpl/gpl-fr.omf
+  /usr/share/omf/gpl/gpl-ko.omf
   /usr/share/omf/gpl/gpl-pa.omf
   /usr/share/omf/gpl/gpl-sv.omf
   /usr/share/omf/gpl/gpl-uk.omf
+  /usr/share/omf/gpl/gpl-vi.omf
   /usr/share/omf/gpl/gpl-zh_CN.omf
   /usr/share/omf/lgpl/lgpl-C.omf
+  /usr/share/omf/lgpl/lgpl-ar.omf
   /usr/share/omf/lgpl/lgpl-es.omf
   /usr/share/omf/lgpl/lgpl-fr.omf
+  /usr/share/omf/lgpl/lgpl-ko.omf
   /usr/share/omf/lgpl/lgpl-pa.omf
   /usr/share/omf/lgpl/lgpl-sv.omf
   /usr/share/omf/lgpl/lgpl-uk.omf
@@ -311,8 +318,6 @@ Files included in the binary packages:
   /usr/lib/libgnome-desktop-2.dll.a
   /usr/lib/libgnome-desktop-2.la
   /usr/lib/pkgconfig/gnome-desktop-2.0.pc
-
-(libgnome-desktop2-doc)
   /usr/share/gtk-doc/html/gnome-desktop/GnomeDItemEdit.html
   /usr/share/gtk-doc/html/gnome-desktop/GnomeHint.html
   /usr/share/gtk-doc/html/gnome-desktop/ch01.html
@@ -331,6 +336,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.18.2-1 -----
+Version bump for GNOME 2.18.
 
 ----- version 2.16.3-1 -----
 Version bump.
