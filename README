@@ -45,17 +45,17 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gnome-desktop-2.18.2-1-src.tar.bz2
+  unpack gnome-desktop-2.18.3-1-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gnome-desktop-2.18.2-1.cygport all
+  cygport ./gnome-desktop-2.18.3-1.cygport all
 
 This will create:
-  /usr/src/gnome-desktop-2.18.2-1-src.tar.bz2
-  /usr/src/gnome-desktop-2.18.2-1.tar.bz2
-  /usr/src/libgnome-desktop2-2.18.2-1.tar.bz2
-  /usr/src/libgnome-desktop2-devel-2.18.2-1.tar.bz2
+  /usr/src/gnome-desktop-2.18.3-1-src.tar.bz2
+  /usr/src/gnome-desktop-2.18.3-1.tar.bz2
+  /usr/src/libgnome-desktop2-2.18.3-1.tar.bz2
+  /usr/src/libgnome-desktop2-devel-2.18.3-1.tar.bz2
 
 -------------------------------------------
 
@@ -66,16 +66,16 @@ Files included in the binary packages:
   /etc/preremove/gnome-desktop.sh
   /usr/bin/gnome-about.exe
   /usr/share/applications/gnome-about.desktop
-  /usr/share/doc/Cygwin/gnome-desktop-2.18.2.README
-  /usr/share/doc/gnome-desktop-2.18.2/AUTHORS
-  /usr/share/doc/gnome-desktop-2.18.2/COPYING
-  /usr/share/doc/gnome-desktop-2.18.2/COPYING-DOCS
-  /usr/share/doc/gnome-desktop-2.18.2/COPYING.LIB
-  /usr/share/doc/gnome-desktop-2.18.2/ChangeLog
-  /usr/share/doc/gnome-desktop-2.18.2/HACKING
-  /usr/share/doc/gnome-desktop-2.18.2/MAINTAINERS
-  /usr/share/doc/gnome-desktop-2.18.2/NEWS
-  /usr/share/doc/gnome-desktop-2.18.2/README
+  /usr/share/doc/Cygwin/gnome-desktop-2.18.3.README
+  /usr/share/doc/gnome-desktop-2.18.3/AUTHORS
+  /usr/share/doc/gnome-desktop-2.18.3/COPYING
+  /usr/share/doc/gnome-desktop-2.18.3/COPYING-DOCS
+  /usr/share/doc/gnome-desktop-2.18.3/COPYING.LIB
+  /usr/share/doc/gnome-desktop-2.18.3/ChangeLog
+  /usr/share/doc/gnome-desktop-2.18.3/HACKING
+  /usr/share/doc/gnome-desktop-2.18.3/MAINTAINERS
+  /usr/share/doc/gnome-desktop-2.18.3/NEWS
+  /usr/share/doc/gnome-desktop-2.18.3/README
   /usr/share/gnome-about/gnome-64.png
   /usr/share/gnome-about/gnome-version.xml
   /usr/share/gnome-about/headers/header-bg-ancient01a.png
@@ -336,6 +336,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 2.18.3-1 -----
+Version bump.
 
 ----- version 2.18.2-1 -----
 Version bump for GNOME 2.18.
