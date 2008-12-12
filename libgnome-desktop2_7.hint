@@ -1,6 +1,7 @@
 category: Gnome
-requires: python python-cairo python-gobject2 python-gtk2 python-gnome2
-sdesc: "Core GNOME Desktop files"
+requires: cygwin libatk1.0_0 libcairo2 libgconf2_4 libgdk_pixbuf2.0_0 libglib2.0_0 libgnome2_0 libgnomecanvas2_0 libgnomeui2_0 libgtk2.0_0 libintl8 libstartup-notification1_0 libX11_6 libxml2 libXrandr2
+external-source: gnome-desktop
+sdesc: "GNOME Desktop API library (runtime)"
 ldesc: "The package contains the libgnome-desktop library which
 contains APIs that really belong in libgnome[ui] but
 have not seen enough testing or development to be considered

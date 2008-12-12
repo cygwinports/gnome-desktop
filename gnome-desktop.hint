@@ -1,7 +1,6 @@
 category: Gnome
-requires: cygwin atk-devel GConf2-devel glib2-devel gtk2-x11-devel libX11-devel libgnome2-devel libgnomecanvas2-devel libgnomeui2-devel gettext libxml2-devel startup-notification-devel
-external-source: gnome-desktop
-sdesc: "GNOME Desktop API library (development)"
+requires: python python-cairo python-gobject2 python-gtk2 python-gnome2
+sdesc: "Core GNOME Desktop files and About dialog"
 ldesc: "The package contains the libgnome-desktop library which
 contains APIs that really belong in libgnome[ui] but
 have not seen enough testing or development to be considered

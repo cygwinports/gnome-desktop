@@ -1,9 +1,0 @@
-inherit gnome2
-
-DESCRIPTION="GNOME desktop API and About dialog"
-
-PKG_NAMES="${PN} lib${PN}2 lib${PN}2-devel"
-PKG_HINTS='setup lib devel'
-PKG_CONTENTS[0]="--exclude=gtk-doc usr/bin/gnome-about usr/share/"
-PKG_CONTENTS[1]='usr/bin/*.dll'
-PKG_CONTENTS[2]='usr/include/ usr/lib/ usr/share/gtk-doc/'
