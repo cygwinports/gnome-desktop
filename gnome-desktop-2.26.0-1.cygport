@@ -2,7 +2,7 @@ inherit gnome2
 
 DESCRIPTION="GNOME desktop API and About dialog"
 
-PKG_NAMES="${PN} lib${PN}2_7 lib${PN}2-devel"
+PKG_NAMES="${PN} lib${PN}2_11 lib${PN}2-devel"
 gnome_desktop_CONTENTS="--exclude=gtk-doc usr/bin/gnome-about usr/share/"
-libgnome_desktop2_7_CONTENTS='usr/bin/*-2-7.dll'
+libgnome_desktop2_11_CONTENTS='usr/bin/*-2-11.dll'
 libgnome_desktop2_devel_CONTENTS='usr/include/ usr/lib/ usr/share/gtk-doc/'

@@ -1,5 +1,5 @@
 category: Gnome
-requires: cygwin libgnome-desktop2_7 libatk1.0-devel libcairo-devel libgconf2-devel libgdk_pixbuf2.0-devel libglib2.0-devel libgnome2-devel libgnomecanvas2-devel libgnomeui2-devel libgtk2.0-devel gettext libstartup-notification1-devel libX11-devel libxml2-devel libXrandr-devel
+requires: cygwin libgnome-desktop2_11 libcairo-devel libgconf2-devel libgdk_pixbuf2.0-devel libglib2.0-devel libgtk2.0-devel gettext libstartup-notification1-devel libX11-devel libXrandr-devel
 external-source: gnome-desktop
 sdesc: "GNOME Desktop API library (development)"
 ldesc: "The package contains the libgnome-desktop library which
