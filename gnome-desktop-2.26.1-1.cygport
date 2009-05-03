@@ -2,6 +2,8 @@ inherit gnome2
 
 DESCRIPTION="GNOME desktop API and About dialog"
 
+SRC_URI=${SRC_URI%.bz2}.gz  ######## 2.26.1 .tar.bz2 is broken
+
 PKG_NAMES="${PN} lib${PN}2_11 lib${PN}2-devel"
 gnome_desktop_CONTENTS="--exclude=gtk-doc usr/bin/gnome-about usr/share/"
 libgnome_desktop2_11_CONTENTS='usr/bin/*-2-11.dll'
