@@ -1,5 +1,7 @@
 category: Gnome
-sdesc: "Core GNOME Desktop files"
+requires: libcairo2 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libgtk3_0 libintl8 libX11_6 libXrandr2
+external-source: gnome-desktop
+sdesc: "GNOME Desktop API library (runtime)"
 ldesc: "The package contains the libgnome-desktop library which
 contains APIs that really belong in libgnome[ui] but
 have not seen enough testing or development to be considered

@@ -1,7 +1,7 @@
 category: Gnome
-requires: libgnome-desktop2_17 libcairo-devel libgconf2-devel libgdk_pixbuf2.0-devel libglib2.0-devel libgtk2.0-devel gettext libstartup-notification1-devel libX11-devel libXrandr-devel
+requires: libgnome-desktop3_0 girepository-Gtk3.0
 external-source: gnome-desktop
-sdesc: "GNOME Desktop API library (development)"
+sdesc: "GNOME Desktop API library (GObject Introspection data)"
 ldesc: "The package contains the libgnome-desktop library which
 contains APIs that really belong in libgnome[ui] but
 have not seen enough testing or development to be considered
