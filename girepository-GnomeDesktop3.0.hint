@@ -1,5 +1,5 @@
 category: Gnome
-requires: libgnome-desktop3_0 girepository-Gtk3.0
+requires: libgnome-desktop3_2 girepository-Gtk3.0
 external-source: gnome-desktop
 sdesc: "GNOME Desktop API library (GObject Introspection data)"
 ldesc: "The package contains the libgnome-desktop library which

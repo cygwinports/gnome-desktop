@@ -1,9 +1,0 @@
-inherit gnome2
-
-DESCRIPTION="GNOME desktop API and About dialog"
-
-PKG_NAMES="${PN} lib${PN}3_0 lib${PN}3-devel girepository-GnomeDesktop3.0"
-gnome_desktop_CONTENTS="--exclude=gir-1.0 --exclude=gtk-doc usr/share/"
-libgnome_desktop3_0_CONTENTS='usr/bin/*-3-0.dll'
-libgnome_desktop3_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
-girepository_GnomeDesktop3_0_CONTENTS="usr/*/gir*/GnomeDesktop-3.0.*"
