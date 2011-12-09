@@ -7,8 +7,9 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(gtk+-3.0)
 	pkgconfig(xrandr)"
 
-PKG_NAMES="${PN} lib${PN}3_2 lib${PN}3-devel girepository-GnomeDesktop3.0"
-gnome_desktop_CONTENTS="--exclude=gir-1.0 --exclude=gtk-doc usr/share/"
+PKG_NAMES="${PN} lib${PN}3_2 lib${PN}3-common lib${PN}3-devel girepository-GnomeDesktop3.0"
+gnome_desktop_CONTENTS="usr/share/doc/ usr/share/gnome/ usr/share/omf/"
 libgnome_desktop3_2_CONTENTS='usr/bin/*-3-2.dll'
+libgnome_desktop3_common_CONTENTS="usr/share/libgnome-desktop-3.0/ usr/share/locale/"
 libgnome_desktop3_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
 girepository_GnomeDesktop3_0_CONTENTS="usr/*/gir*/GnomeDesktop-3.0.*"
