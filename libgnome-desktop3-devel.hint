@@ -1,5 +1,5 @@
 category: Gnome
-requires: libgnome-desktop3_2 libcairo-devel libgdk_pixbuf2.0-devel libglib2.0-devel libgtk3-devel gettext libX11-devel libXrandr-devel
+requires: libgnome-desktop3_2 libglib2.0-devel libgtk3-devel
 external-source: gnome-desktop
 sdesc: "GNOME Desktop API library (development)"
 ldesc: "The package contains the libgnome-desktop library which
