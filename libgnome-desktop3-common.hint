@@ -1,8 +1,0 @@
-category: Gnome
-requires:
-external-source: gnome-desktop
-sdesc: "GNOME Desktop API library (data)"
-ldesc: "The package contains the libgnome-desktop library which
-contains APIs that really belong in libgnome[ui] but
-have not seen enough testing or development to be considered
-stable. Use at your own risk."

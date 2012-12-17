@@ -1,6 +1,0 @@
-category: Gnome
-sdesc: "GNOME license documentation"
-ldesc: "The package contains the libgnome-desktop library which
-contains APIs that really belong in libgnome[ui] but
-have not seen enough testing or development to be considered
-stable. Use at your own risk."

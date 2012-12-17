@@ -1,8 +1,0 @@
-category: Gnome
-requires: libgnome-desktop3_2 libglib2.0-devel libgtk3-devel
-external-source: gnome-desktop
-sdesc: "GNOME Desktop API library (development)"
-ldesc: "The package contains the libgnome-desktop library which
-contains APIs that really belong in libgnome[ui] but
-have not seen enough testing or development to be considered
-stable. Use at your own risk."
