@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-desktop"
-VERSION=3.6.2
+VERSION=3.6.3
 RELEASE=1
 CATEGORY="GNOME"
 SUMMARY="GNOME Desktop API library"
