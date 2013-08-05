@@ -1,9 +1,9 @@
 inherit gnome2
 
 NAME="gnome-desktop"
-VERSION=3.6.3
+VERSION=3.8.3
 RELEASE=1
-CATEGORY="GNOME"
+CATEGORY="Libs"
 SUMMARY="GNOME Desktop API library"
 DESCRIPTION="The package contains the libgnome-desktop library which
 contains APIs that really belong in libgnome[ui] but
@@ -15,11 +15,12 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(gtk+-3.0)
 	pkgconfig(xrandr)"
 
-PKG_NAMES="${PN} lib${PN}3_4 lib${PN}3-common lib${PN}3-devel girepository-GnomeDesktop3.0"
+PKG_NAMES="${NAME} lib${NAME}3_7 lib${NAME}3-common lib${NAME}3-devel girepository-GnomeDesktop3.0"
+gnome_desktop_CATEGORY="GNOME"
 gnome_desktop_SUMMARY="GNOME license documentation"
 gnome_desktop_CONTENTS="usr/share/doc/ usr/share/gnome/ usr/share/help/"
-libgnome_desktop3_4_REQUIRES="libgnome-desktop3-common"
-libgnome_desktop3_4_CONTENTS='usr/bin/*-3-4.dll'
+libgnome_desktop3_7_REQUIRES="libgnome-desktop3-common"
+libgnome_desktop3_7_CONTENTS='usr/bin/*-3-7.dll'
 libgnome_desktop3_common_CONTENTS="usr/share/libgnome-desktop-3.0/ usr/share/locale/"
 libgnome_desktop3_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/'
 girepository_GnomeDesktop3_0_CONTENTS="usr/*/gir*/GnomeDesktop-3.0.*"
