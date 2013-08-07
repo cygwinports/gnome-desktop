@@ -1,0 +1,11 @@
+--- origsrc/gnome-desktop-3.8.3/libgnome-desktop/Makefile.am	2013-03-16 20:49:53.000000000 -0500
++++ src/gnome-desktop-3.8.3/libgnome-desktop/Makefile.am	2013-08-07 17:04:13.910654800 -0500
+@@ -11,7 +11,7 @@ AM_CPPFLAGS =							\
+ 	-DG_LOG_DOMAIN=\"GnomeDesktop\"				\
+ 	-DGNOMELOCALEDIR=\""$(prefix)/$(DATADIRNAME)/locale\""	\
+ 	-DISO_CODES_PREFIX=\""$(ISO_CODES_PREFIX)"\"		\
+-	-DLIBLOCALEDIR=\""$(prefix)/lib/locale"\"		\
++	-DLIBLOCALEDIR=\""/usr/share/locale"\"			\
+ 	-DPNP_IDS=\""$(PNP_IDS)"\"				\
+ 	-DXKB_BASE=\""$(XKB_BASE)"\"				\
+ 	$(DISABLE_DEPRECATED_CFLAGS)
