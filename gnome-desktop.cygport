@@ -1,7 +1,7 @@
 inherit gnome2
 
 NAME="gnome-desktop"
-VERSION=3.14.2
+VERSION=3.18.1
 RELEASE=1
 CATEGORY="Libs"
 SUMMARY="GNOME Desktop API library"
@@ -16,13 +16,14 @@ DEPEND="gnome-common gtk-doc
 	pkgconfig(gtk+-3.0)
 	pkgconfig(xrandr)"
 
-PKG_NAMES="${NAME} lib${NAME}3_10 lib${NAME}3-common lib${NAME}3-devel lib${NAME}3-doc girepository-GnomeDesktop3.0"
+PKG_NAMES="${NAME} lib${NAME}3_12 lib${NAME}3-common lib${NAME}3-devel lib${NAME}3-doc girepository-GnomeDesktop3.0"
 gnome_desktop_CATEGORY="GNOME"
 gnome_desktop_SUMMARY="GNOME license documentation"
 gnome_desktop_CONTENTS="usr/share/doc/ usr/share/gnome/ usr/share/help/"
-libgnome_desktop3_10_REQUIRES="libgnome-desktop3-common iso-codes"
-libgnome_desktop3_10_CONTENTS='usr/bin/*-3-10.dll'
+libgnome_desktop3_12_REQUIRES="libgnome-desktop3-common iso-codes"
+libgnome_desktop3_12_CONTENTS='usr/bin/*-3-12.dll'
 libgnome_desktop3_common_CONTENTS="usr/share/libgnome-desktop-3.0/ usr/share/locale/"
+libgnome_desktop3_devel_REQUIRES="girepository-GnomeDesktop3.0"
 libgnome_desktop3_devel_CONTENTS='usr/include/ usr/lib/lib* usr/lib/pkgconfig/'
 libgnome_desktop3_doc_CATEGORY="Doc"
 libgnome_desktop3_doc_CONTENTS="usr/share/gtk-doc/"
